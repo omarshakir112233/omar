@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>وسوم HTML وخصائص CSS</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="#html">وسوم HTML</a></li>
+      <li><a href="#css">خصائص CSS</a></li>
+    </ul>
+  </nav>
+
+  <h1>دليلك في HTML و CSS</h1>
+  <p>هذا الموقع مخصص لعرض أهم وسوم HTML وخصائص CSS للمبتدئين، مع شرح ومثال لكل وسم أو خاصية.</p>
+
+  <section id="html">
+    <h2>🟦 وسوم HTML الأساسية</h2>
+
+    <h3>&lt;p&gt; - الفقرة</h3>
+    <p>يُستخدم لكتابة فقرة نصية.</p>
+    <pre>
+&lt;p&gt;مرحبًا بك في عالم HTML!&lt;/p&gt;
+    </pre>
+
+    <h3>&lt;a&gt; - الرابط</h3>
+    <p>يُستخدم لإنشاء رابط لموقع أو صفحة أخرى.</p>
+    <pre>
+&lt;a href="https://example.com"&gt;اذهب للموقع&lt;/a&gt;
+    </pre>
+
+    <h3>&lt;img&gt; - الصورة</h3>
+    <p>يُستخدم لعرض صورة من رابط أو ملف.</p>
+    <pre>
+&lt;img src="image.jpg" alt="صورة"&gt;
+    </pre>
+
+    <h3>&lt;input&gt; - حقل الإدخال</h3>
+    <p>يُستخدم لإنشاء حقل إدخال في النماذج.</p>
+    <pre>
+&lt;input type="text" placeholder="اكتب هنا"&gt;
+    </pre>
+
+    <h3>&lt;div&gt; - تقسيم الصفحة</h3>
+    <p>يُستخدم لتجميع عناصر معًا في قسم واحد.</p>
+    <pre>
+&lt;div&gt;هذا قسم داخل الصفحة&lt;/div&gt;
+    </pre>
+  </section>
+
+  <hr>
+
+  <section id="css">
+    <h2>🟩 خصائص CSS الأساسية</h2>
+
+    <h3>color - لون النص</h3>
+    <p>تُستخدم لتغيير لون الخط داخل العنصر.</p>
+    <pre>
+p {
+  color: red;
+}
+    </pre>
+
+    <h3>background-color - لون الخلفية</h3>
+    <p>تُستخدم لتلوين خلفية العنصر.</p>
+    <pre>
+div {
+  background-color: lightblue;
+}
+    </pre>
+
+    <h3>text-align - محاذاة النص</h3>
+    <p>تُستخدم لتحديد محاذاة النص (يمين، يسار، وسط).</p>
+    <pre>
+h1 {
+  text-align: center;
+}
+    </pre>
+
+    <h3>margin - الهامش الخارجي</h3>
+    <p>تُستخدم لإضافة مساحة خارج حدود العنصر.</p>
+    <pre>
+div {
+  margin: 20px;
+}
+    </pre>
+
+    <h3>padding - الهامش الداخلي</h3>
+    <p>تُستخدم لإضافة مساحة داخل حدود العنصر.</p>
+    <pre>
+div {
+  padding: 10px;
+}
+    </pre>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      document.querySelectorAll('section').forEach(function(section) {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
